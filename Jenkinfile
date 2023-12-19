@@ -11,14 +11,14 @@ pipeline {
 
     tools {
 
-        maven "M9"
+        maven "m2"
     }
 
     stages {
         stage('Build') {
             steps {
 
-                git 'https://tools.publicis.sapient.com/bitbucket/scm/pdagb/cps-team1.git'
+                git 'https://github.com/rit1311raj/banking-system-java.git'
 
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
